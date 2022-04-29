@@ -14,15 +14,35 @@ let siteDeleteSuccesses = 0
 let siteDeleteFailures = 0
 
 // are you sure?
-userInput.question(`WARNING: This will delete all sites from org ID ${orgId}. Proceed? (y/n)\n`, (input)=>{
+userInput.question(`WARNING: This will delete all sites from org ID ${orgId}. Proceed? (y/n)\n`, async (input)=>{
   if (input != 'y' && input != 'yes') {
     console.log('Site delete canceled. No harm done.')
     process.exit(0)
   } else {
-    begin()
+
+    let org = await getOrg()
+
+    userInput.question(`ARE YOU SURE?\nThis is '${org.name}' we are talking about! Proceed? (y/n)\n`, (input2)=>{
+      if (input2 != 'y' && input2 != 'yes') {
+        console.log('Site delete canceled. No harm done.')
+        process.exit(0)
+      } else {
+        begin()
+      }
+      userInput.close()
+    })
   }
-  userInput.close()
 })
+
+// function for getting org details
+async function getOrg(){
+  try {
+    let response = await rest.get(`https://api.mist.com/api/v1/orgs/${orgId}`, restReqConfig)
+    return response.data
+  } catch (error) {
+    console.error(error)
+  }
+}
 
 // function for deleting sites
 async function deleteSite(site) {

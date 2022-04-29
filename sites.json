@@ -1,0 +1,242 @@
+[
+  {
+    "name": "ST243 Gas Station",
+    "country_code": "US",
+    "address": "40401 S Groesbeck Hwy, Clinton Twp, MI 48036, USA",
+    "latlng": {
+      "lat": 42.595754,
+      "lng": -82.900965
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST260 Gas Station",
+    "country_code": "US",
+    "address": "2754 S Adams Rd, Rochester Hills, MI 48309, USA",
+    "latlng": {
+      "lat": 42.640557,
+      "lng": -83.20605
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST306 Gas Station",
+    "country_code": "US",
+    "address": "25191 Schoenherr Rd, Warren, MI 48089, USA",
+    "latlng": {
+      "lat": 42.47892,
+      "lng": -82.987784
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST308 Gas Station",
+    "country_code": "US",
+    "address": "1820 Nagel Rd, Avon, OH 44011, USA",
+    "latlng": {
+      "lat": 41.460156,
+      "lng": -81.990116
+    },
+    "timezone": "America/New_York"
+  },
+  {
+    "name": "DC860",
+    "country_code": "US",
+    "address": "536 N Main St, Middlebury, IN 46540, USA",
+    "latlng": {
+      "lat": 41.695604,
+      "lng": -85.690354
+    },
+    "timezone": "America/Indiana/Indianapolis"
+  },
+  {
+    "name": "DC883",
+    "country_code": "US",
+    "address": "8857 Swan Creek Rd, Newport, MI 48166, USA",
+    "latlng": {
+      "lat": 42.003244,
+      "lng": -83.310436
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST615",
+    "country_code": "US",
+    "address": "3000 Walker Ave NW, Grand Rapids, MI 49544, USA",
+    "latlng": {
+      "lat": 43.019061,
+      "lng": -85.72445
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "DC882",
+    "country_code": "US",
+    "address": "8857 Swan Creek Rd, Newport, MI 48166, USA",
+    "latlng": {
+      "lat": 42.003244,
+      "lng": -83.310436
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "BLG515",
+    "country_code": "US",
+    "address": "5020 Ross Dr SE, Grand Rapids, MI 49512, USA",
+    "latlng": {
+      "lat": 42.883543,
+      "lng": -85.534346
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST182",
+    "country_code": "US",
+    "address": "855 S Randall Rd, St. Charles, IL 60174, USA",
+    "latlng": {
+      "lat": 41.900856,
+      "lng": -88.34351
+    },
+    "timezone": "America/Chicago"
+  },
+  {
+    "name": "BLG975",
+    "country_code": "HK",
+    "address": "Tsim Sha Tsui Centre, 66 Mody Rd, Tsim Sha Tsui East, Hong Kong",
+    "latlng": {
+      "lat": 22.297658,
+      "lng": 114.177841
+    },
+    "timezone": "Asia/Hong_Kong"
+  },
+  {
+    "name": "ST325",
+    "country_code": "US",
+    "address": "4866 Fulton Dr NW, Canton, OH 44718, USA",
+    "latlng": {
+      "lat": 40.84626,
+      "lng": -81.440081
+    },
+    "timezone": "America/New_York"
+  },
+  {
+    "name": "ST148",
+    "country_code": "US",
+    "address": "888 Eastgate N Dr, Cincinnati, OH 45245, USA",
+    "latlng": {
+      "lat": 39.097907,
+      "lng": -84.263785
+    },
+    "timezone": "America/New_York"
+  },
+  {
+    "name": "ST178",
+    "country_code": "US",
+    "address": "808 Illinois Rte 59, Aurora, IL 60504, USA",
+    "latlng": {
+      "lat": 41.767909,
+      "lng": -88.208461
+    },
+    "timezone": "America/Chicago"
+  },
+  {
+    "name": "ST178 Gas Station",
+    "country_code": "US",
+    "address": "808 Illinois Rte 59, Aurora, IL 60504, USA",
+    "latlng": {
+      "lat": 41.767909,
+      "lng": -88.208461
+    },
+    "timezone": "America/Chicago"
+  },
+  {
+    "name": "BLG976",
+    "country_code": "HK",
+    "address": "Excel Centre, 483A Castle Peak Rd, Cheung Sha Wan, Hong Kong",
+    "latlng": {
+      "lat": 22.338757,
+      "lng": 114.150136
+    },
+    "timezone": "Asia/Hong_Kong"
+  },
+  {
+    "name": "ST239 Gas Station",
+    "country_code": "US",
+    "address": "2720 US-34, Oswego, IL 60543, USA",
+    "latlng": {
+      "lat": 41.700685,
+      "lng": -88.31294
+    },
+    "timezone": "America/Chicago"
+  },
+  {
+    "name": "ST245",
+    "country_code": "US",
+    "address": "2160 Hartland Rd, Hartland, MI 48353, USA",
+    "latlng": {
+      "lat": 42.638679,
+      "lng": -83.744151
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST251",
+    "country_code": "US",
+    "address": "5019 Red Arrow Hwy, Stevensville, MI 49127, USA",
+    "latlng": {
+      "lat": 42.027377,
+      "lng": -86.518187
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST020",
+    "country_code": "US",
+    "address": "2425 Alpine Ave NW, Walker, MI 49544, USA",
+    "latlng": {
+      "lat": 43.007883,
+      "lng": -85.691231
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST251 Gas Station",
+    "country_code": "US",
+    "address": "5019 Red Arrow Hwy, Stevensville, MI 49127, USA",
+    "latlng": {
+      "lat": 42.027377,
+      "lng": -86.518187
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST311",
+    "country_code": "US",
+    "address": "1540 28th St SE, Grand Rapids, MI 49508, USA",
+    "latlng": {
+      "lat": 42.910905,
+      "lng": -85.629194
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST108 Gas Station",
+    "country_code": "US",
+    "address": "7300 Eastman Ave, Midland, MI 48642, USA",
+    "latlng": {
+      "lat": 43.663185,
+      "lng": -84.243356
+    },
+    "timezone": "America/Detroit"
+  },
+  {
+    "name": "ST108",
+    "country_code": "US",
+    "address": "7300 Eastman Ave, Midland, MI 48642, USA",
+    "latlng": {
+      "lat": 43.663185,
+      "lng": -84.243356
+    },
+    "timezone": "America/Detroit"
+  }
+]

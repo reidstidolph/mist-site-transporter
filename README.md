@@ -4,9 +4,17 @@ This is used for mass export, import, and cleanup (delete) in Mist orgs.
 
 ## Installation and Setup
 
+### Clone Repo
+
+To begin, clone this repo to your machine:
+```
+git clone https://github.com/reidstidolph/mist-site-transporter.git
+cd mist-site-transporter
+```
+
 ### Module Install
 
-To begin, make sure you have NodeJS installed on your machine running this script. Install required modules by running:
+Make sure you have NodeJS installed on your machine running this script. Install required modules by running:
 ```
 npm install
 ```

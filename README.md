@@ -1,6 +1,6 @@
 # Mist Site Transporter
 
-This is used for mass export, import, and cleanup (delete) in Mist orgs.
+This is used for mass export, import, and cleanup (delete) of sites in Mist orgs.
 
 ## Installation and Setup
 

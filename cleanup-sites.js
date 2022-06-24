@@ -4,10 +4,20 @@ const rest = require('axios')
 const readline = require('readline')
 
 // import token and org to cleanup sites from
-const apiToken = require('./token.json').token
-const orgId = require('./orgs.json').cleanupOrg
+const apiTokens = require('./token.json')
+const orgInfo = require('./orgs.json')
+const orgId = orgInfo.cleanupOrg.id
 
 // variables
+let apiHost
+let apiToken
+if (orgInfo.cleanupOrg.env === "production") {
+  apiHost = "api.mist.com"
+  apiToken = apiTokens.production
+} else if (orgInfo.cleanupOrg.env === "staging") {
+  apiHost = "api.mistsys.com"
+  apiToken = apiTokens.staging
+}
 const restReqConfig = { headers: { Authorization: `Token ${apiToken}` }}
 const userInput = readline.createInterface({input: process.stdin,output: process.stdout})
 let siteDeleteSuccesses = 0

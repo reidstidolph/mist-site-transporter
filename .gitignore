@@ -2,3 +2,4 @@ node_modules/
 orgs.json
 token.json
 sites.json
+package-lock.json

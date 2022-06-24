@@ -3,12 +3,22 @@
 const rest = require('axios')
 
 // import token and org to import to
-const apiToken = require('./token.json').token
-const orgId = require('./orgs.json').importOrg
+const apiTokens = require('./token.json')
+const orgInfo = require('./orgs.json')
+const orgId = orgInfo.importOrg.id
 const siteData = require('./sites.json')
 console.log(`Imported ${siteData.length} sites.`)
 
 // variables
+let apiHost
+let apiToken
+if (orgInfo.importOrg.env === "production") {
+  apiHost = "api.mist.com"
+  apiToken = apiTokens.production
+} else if (orgInfo.importOrg.env === "staging") {
+  apiHost = "api.mistsys.com"
+  apiToken = apiTokens.staging
+}
 const restReqConfig = { headers: { Authorization: `Token ${apiToken}` }}
 let siteCreateSuccesses = 0
 let siteCreateFailures = 0
@@ -16,7 +26,7 @@ let siteCreateFailures = 0
 // site create function
 async function createSite(site) {
   try {
-    let response = await rest.post(`https://api.mist.com/api/v1/orgs/${orgId}/sites`, site, restReqConfig)
+    let response = await rest.post(`https://${apiHost}/api/v1/orgs/${orgId}/sites`, site, restReqConfig)
     siteCreateSuccesses++
     console.log(`'${response.data.name}' site create success!`)
 

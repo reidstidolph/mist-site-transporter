@@ -4,10 +4,20 @@ const rest = require('axios')
 const fs = require('fs')
 
 // import token and org to export from
-const apiToken = require('./token.json').token
-const orgId = require('./orgs.json').exportOrg
+const apiTokens = require('./token.json')
+const orgInfo = require('./orgs.json')
+const orgId = orgInfo.exportOrg.id
 
 // variables
+let apiHost
+let apiToken
+if (orgInfo.exportOrg.env === "production") {
+  apiHost = "api.mist.com"
+  apiToken = apiTokens.production
+} else if (orgInfo.exportOrg.env === "staging") {
+  apiHost = "api.mistsys.com"
+  apiToken = apiTokens.staging
+}
 const restReqConfig = { headers: { Authorization: `Token ${apiToken}` }}
 const siteFileName = 'sites.json'
 
@@ -24,7 +34,7 @@ const writeToFile = function(path, contentString){
 async function begin() {
   try {
     // fetch sites
-    let response = await rest.get(`https://api.mist.com/api/v1/orgs/${orgId}/sites`, restReqConfig)
+    let response = await rest.get(`https://${apiHost}/api/v1/orgs/${orgId}/sites`, restReqConfig)
     let siteData = response.data
 
     // log message
